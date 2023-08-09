@@ -1,0 +1,12 @@
+.app-container {
+  display: flex;
+  height: 150vh;
+
+  .content-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+

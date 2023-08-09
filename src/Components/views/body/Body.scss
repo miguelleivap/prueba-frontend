@@ -1,0 +1,114 @@
+#main-body {
+  flex: 1;
+  margin: 0;
+  background: #ECECF1;
+
+  .body-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .container-first-section-body {
+      width: 75%;
+      height: 100%;
+
+        .container-title{
+          display: flex;
+          max-width: 750px;
+          justify-content: space-between;
+          margin: 34px 0 10px 30px;
+          
+          .latest,
+          .popular{
+            font-size: 17.6px;
+            font-family: Roboto;
+            font-weight: 700;
+            color: #8C8D91;
+            cursor: pointer;
+
+            &.isActive{
+              color: #E4871B;
+            }
+          }
+
+          .popular{
+            margin-left: 19px;
+          }
+        }
+
+        .container-filter{
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 45px;
+
+          .title-filter{
+            color: #49494F;
+            font-size: 14.72px;
+            font-family: Roboto;
+            font-weight: 400;
+          }
+          .option-filter {
+            color: #49494F;
+            font-size: 17.6px;
+            font-family: Roboto;
+            font-weight: 700;
+            margin: 0 20px 0 10px;
+          }
+
+          .triangle-icon{
+            position: relative;
+            bottom: 27px;
+            left: 43px;
+          }
+        }
+
+        .info-card {
+          margin: 10px 0 10px 30px;
+        }
+      }
+    
+      .container-second-section-body {
+        flex: 1;
+        height: 100%;
+        padding: 25px;
+
+        .container-rectangle{
+          display: block;
+          width: 410px;
+          height: 124px;
+          border-radius: 4px;
+          border: 1px solid var(--grayscale-grey-dddedf, #DDDEDF);
+          background: var(--brand-blue-304-c-70, #304C70);
+          padding-top: 30px;
+
+          svg {
+            margin: 0px 0px 10px 15px;
+          }
+        }
+
+        .container-second-rectangle{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          justify-items: center;
+          width: 408px;
+          height: 56px;
+          border-radius: 4px;
+          border: 2px solid var(--brand-blue-304-c-70, #304C70); 
+          margin-top: 24px;
+          
+          .circle {
+            display: inline-flex;
+            width: 18px;
+            height: 18px;
+            background-color: #304C70;
+            border-radius: 100%;
+            margin-left: 5px;
+          }
+        }
+      } 
+  }
+}
+
